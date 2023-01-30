@@ -12466,3 +12466,16 @@ button:hover + .side-text {
 .get-in-touch {
   width: 500px;
 }
+
+@media screen and (max-width: 1170px) {
+  .email {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 50px;
+  }
+
+  .get-in-touch {
+    margin-top: 150px;
+  }
+}
