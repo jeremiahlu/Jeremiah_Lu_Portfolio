@@ -127,15 +127,20 @@
   }
 }
 
+.name {
+  font-size: 60px;
+  text-shadow: 1px 2px 2px #000;
+}
+
 body {
   margin: 0;
-  font-family: var(--bs-body-font-family);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   font-size: var(--bs-body-font-size);
   font-weight: var(--bs-body-font-weight);
   line-height: var(--bs-body-line-height);
   color: var(--bs-body-color);
   text-align: var(--bs-body-text-align);
-  background-color: var(--bs-body-bg);
+  background-color: rgba(121, 109, 109, 0.2);
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
@@ -676,7 +681,7 @@ progress {
   margin-top: -1rem;
   margin-bottom: 1rem;
   font-size: 0.875em;
-  color: #6c757d;`
+  color: #6c757d;
 }
 
 .section-subheading-2 {
@@ -697,7 +702,7 @@ progress {
   font-style: italic;
   font-size: 25px;
   font-weight: bold;
-  color: #ffc800;
+  /* color: #ffc800; */
   /* margin-bottom: 20px; */
 }
 
@@ -12440,4 +12445,24 @@ section#contact form#contactForm :-ms-input-placeholder {
 button:hover + .side-text {
   display: inline;
   color: rgba(0, 0, 0, 0.5);
+}
+
+.contact-container {
+  background-color: #000;
+  color: rgba(225, 225, 225, 0.6);
+  /* background-image: url("../assets/img/map-image.png"); */
+}
+
+.contact-div {
+  background-image: url("../assets/img/map-image.png");
+}
+
+.email {
+  display: flex;
+  justify-content: space-between;
+  margin: 50px;
+}
+
+.get-in-touch {
+  width: 500px;
 }

@@ -73,20 +73,21 @@
     <!-- Masthead-->
     <header class="masthead">
       <div class="container">
-          <div class="masthead-subheading">Hello, welcome to my portfolio!
+          <div>Hello, my name is <h1 class='name'> Jeremiah Lu </h1>
         </div>
-        <div class="i-am"> I am 
-            <div id='animated-text'>Jeremiah Lu</div>
+        
+        <div class="i-am"> I'm
+            <div id='animated-text'>a full stack software developer</div>
     </div>
 
 <script>
-    var text = ["a Software Engineer.", "a Senior MRI Technologist.", "a day trader.", "a DIYer"];
+    var text = ["a Senior MRI Specialist.", "a day trader.", "a DIYer", "lovin it"];
     var counter = 0;
   
     setInterval(function() {
       document.getElementById("animated-text").innerHTML = text[counter];
       counter = (counter + 1) % text.length;
-    }, 4000);
+    }, 2500);
   </script>
       </span> 
         <a class="btn btn-primary btn-xl text-uppercase" href="#services"
@@ -140,15 +141,17 @@
               
           <h3 class="section-subheading text-muted about-me-text">
             <p class="subheading-1">
-              Hello! My name is Jeremiah Lu and I enjoy being hands on and turning
+                I am a full stack software engineer with experience in Javascript and Python frameworks with emphasis in smooth frontend development using React / Redux.
+            </p>
+            <p class="subheading-1">
+              I enjoy being hands on and turning
               an idea into something tangible from scratch. I've built things in
               various facets including home improvement, woodworking, stock
               market portfolios, cooking and of course, software development.
              </p>
               <p class="subheading-1">
             Throughout my life, I've often thought about how technology could
-            improve various aspects of everyday life. From automation to
-            mobile applications to machine learning, I believe that technology
+            improve various aspects of everyday life. I believe that technology
             is constantly advancing and has the potential to change the world
             for the better. I am eager to be a part of this progress,
             particularly in the areas of automation, mobile development, and
@@ -396,11 +399,54 @@
       <div class="container">
         <div class="text-center">
           <h2 class="section-heading text-uppercase">Timeline</h2>
-          <h3 class="section-subheading text-muted">
-          
+          <h3 class="section-subheading 
+          text-muted">
+            Although, I loved interacting and helping my patients, I needed a creative outlet where I could bring my ideas to life. Working with code and building my first web application did just that. I am excited to see what else I will be able to build in the near future.
           </h3>
         </div>
         <ul class="timeline">
+            <li>
+                <div class="timeline-image">
+                  <img
+                    class="rounded-circle img-fluid"
+                    src="assets/img/about/aa.png"
+                    alt="..."
+                  />
+                </div>
+                <div class="timeline-panel">
+                  <div class="timeline-heading">
+                    <h4>2022-2023</h4>
+                    <h4 class="subheading">App Academy</h4>
+                  </div>
+                  <div class="timeline-body">
+                    <p class="text-muted">
+                      Part time 
+                      Fullstack Software Engineering 
+                    </p>
+                  </div>
+                </div>
+              </li>
+          <li class="timeline-inverted">
+            <div class="timeline-image">
+              <img
+                class="rounded-circle img-fluid"
+                src="assets/img/about/nyu.png"
+                alt="..."
+              />
+            </div>
+            <div class="timeline-panel">
+              <div class="timeline-heading">
+                <h4>2016-2022</h4>
+                <h4 class="subheading">NYU Langone Health</h4>
+              </div>
+              <div class="timeline-body">
+                <p class="text-muted">
+                 Senior MRI Specialist - IV Certified
+                </p>
+              </div>
+            </div>
+          </li>
+         
           <li>
             <div class="timeline-image">
               <img
@@ -417,49 +463,12 @@
               </div>
               <div class="timeline-body">
                 <p class="text-muted">
-                 Bachelor of Science Psychology
-                 Bachelor of Science Health Sciences
+                 <p>
+                     Bachelor of Science Psychology 
+                 </p>
+                 <p>
+                     Bachelor of Science Health Sciences
                 </p>
-              </div>
-            </div>
-          </li>
-          <li class="timeline-inverted">
-            <div class="timeline-image">
-              <img
-                class="rounded-circle img-fluid"
-                src="assets/img/about/nyu.png"
-                alt="..."
-              />
-            </div>
-            <div class="timeline-panel">
-              <div class="timeline-heading">
-                <h4>2016-2022</h4>
-                <h4 class="subheading">NYU Langone Health</h4>
-              </div>
-              <div class="timeline-body">
-                <p class="text-muted">
-                 Senior MRI Technologist - IV Certified
-                </p>
-              </div>
-            </div>
-          </li>
-          <li>
-            <div class="timeline-image">
-              <img
-                class="rounded-circle img-fluid"
-                src="assets/img/about/aa.png"
-                alt="..."
-              />
-            </div>
-            <div class="timeline-panel">
-              <div class="timeline-heading">
-                <h4>2022-2023</h4>
-                <h4 class="subheading">App Academy</h4>
-              </div>
-              <div class="timeline-body">
-                <p class="text-muted">
-                  Part time 
-                  Fullstack Software Engineering 
                 </p>
               </div>
             </div>
@@ -654,7 +663,7 @@
       </div>
     </div> -->
     <!-- Contact-->
-    <section class="page-section" id="contact">
+    <!-- <section class="page-section" id="contact">
       <div class="container">
         <div class="text-center">
           <h2 class="section-heading text-uppercase">Contact Me</h2>
@@ -662,18 +671,12 @@
             
           </h3>
         </div>
-        <!-- * * * * * * * * * * * * * * *-->
-        <!-- * * SB Forms Contact Form * *-->
-        <!-- * * * * * * * * * * * * * * *-->
-        <!-- This form is pre-integrated with SB Forms.-->
-        <!-- To make this form functional, sign up at-->
-        <!-- https://startbootstrap.com/solution/contact-forms-->
-        <!-- to get an API token!-->
+       
         <form id="contactForm" data-sb-form-api-token="API_TOKEN">
           <div class="row align-items-stretch mb-5">
             <div class="col-md-6">
               <div class="form-group">
-                <!-- Name input-->
+
                 <input
                   class="form-control"
                   id="name"
@@ -686,7 +689,7 @@
                 </div>
               </div>
               <div class="form-group">
-                <!-- Email address input-->
+
                 <input
                   class="form-control"
                   id="email"
@@ -702,7 +705,7 @@
                 </div>
               </div>
               <div class="form-group mb-md-0">
-                <!-- Phone number input-->
+
                 <input
                   class="form-control"
                   id="phone"
@@ -717,7 +720,7 @@
             </div>
             <div class="col-md-6">
               <div class="form-group form-group-textarea mb-md-0">
-                <!-- Message input-->
+
                 <textarea
                   class="form-control"
                   id="message"
@@ -733,10 +736,7 @@
               </div>
             </div>
           </div>
-          <!-- Submit success message-->
-          <!---->
-          <!-- This is what your users will see when the form-->
-          <!-- has successfully submitted-->
+         
           <div class="d-none" id="submitSuccessMessage">
             <div class="text-center text-white mb-3">
               <div class="fw-bolder">Form submission successful!</div>
@@ -747,16 +747,13 @@
               >
             </div>
           </div>
-          <!-- Submit error message-->
-          <!---->
-          <!-- This is what your users will see when there is-->
-          <!-- an error submitting the form-->
+          
           <div class="d-none" id="submitErrorMessage">
             <div class="text-center text-danger mb-3">
               Error sending message!
             </div>
           </div>
-          <!-- Submit Button-->
+
           <div class="text-center">
             <button
               class="btn btn-primary btn-xl text-uppercase disabled"
@@ -768,6 +765,19 @@
           </div>
         </form>
       </div>
+    </section> -->
+    <section class="contact-container" >
+        <div class="contact-div">
+            <div class="email"> 
+                <h1>jeremiahlu09@gmail.com</h1>
+                <div class="get-in-touch">
+                    <h1> Get In Touch </h1>
+                    <p>
+                        I am currently looking for  opportunities and a team in which I can join to sharpen my skills as a software engineer and one that promotes mentorship. My inbox is always open, whether you have a question or just want to say hi. You can best reach me via <a href="https://www.linkedin.com/in/jeremiah-lu" target="_blank">LinkedIn</a> or <a target="_blank" href="mailto:jeremiahlu09@gmail.com?subject='Hello!'">Email.</a>
+                    </p>
+                </div>
+            </div>
+        </div>
     </section>
     <!-- Footer-->
     <!-- <footer class="footer py-4">
