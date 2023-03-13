@@ -754,6 +754,28 @@ progress {
     max-width: 540px;
   }
 }
+
+/* @media screen and (max-width: 400px) {
+  .container-sm,
+  .container {
+    max-width: 360px;
+    padding: 10;
+    margin: 0;
+  }
+
+  * {
+    max-width: 375px;
+    padding-left: 10px;
+  }
+
+  header.masthead {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center center;
+  }
+} */
+
 @media (min-width: 768px) {
   .container-md,
   .container-sm,
@@ -761,6 +783,7 @@ progress {
     max-width: 720px;
   }
 }
+
 @media (min-width: 992px) {
   .container-lg,
   .container-md,
@@ -11901,6 +11924,57 @@ header.masthead {
   background-position: top center;
   background-size: 100% 80%;
 }
+
+/* header.image {
+  width: 100%;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: top center;
+  background-size: 100% 80%;
+} */
+
+@media (max-width: 555px) {
+  .container-sm,
+  .container {
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center center;
+    background-size: fill;
+    width: 100%;
+  }
+  #sidebar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+  }
+
+  /* * {
+    max-width: 375px;
+    padding-left: 10px;
+  } */
+
+  .contact-div {
+    width: 100%;
+  }
+
+  .about-me-text,
+  .subheading-1 {
+    width: 200px;
+    padding: 10px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .about-me-1 {
+    display: flex;
+    flex-direction: column;
+  }
+  .about-me-text,
+  .subheading-1 {
+    width: 400px;
+  }
+}
+
 header.masthead .masthead-subheading {
   font-size: 40px;
   font-style: italic;
