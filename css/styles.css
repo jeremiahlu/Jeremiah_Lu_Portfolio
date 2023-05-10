@@ -789,7 +789,7 @@ progress {
   .container-md,
   .container-sm,
   .container {
-    max-width: 960px;
+    max-width: 100vw;
   }
 }
 @media (min-width: 1200px) {
@@ -11910,11 +11910,38 @@ p {
     margin-right: 0;
   }
 }
+/* 
+.background-image {
+  position: absolute;
+  display: flex;
+  overflow: hidden;
+}
+
+.textContainer {
+  z-index: 1;
+  border: 1px solid green;
+} */
+
+.masthead .container {
+  width: 100vw;
+  /* height: 200px; */
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  /* max-height: 100px; */
+  overflow-x: hidden;
+  /* border: 1px solid red; */
+  z-index: 10;
+}
 
 header.masthead {
   padding-top: 10.5rem;
   padding-bottom: 6rem;
   text-align: center;
+  min-width: 100vw;
+  width: 100vw;
   color: #fff;
   background-image: url("../assets/img/cover.png");
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 1);
